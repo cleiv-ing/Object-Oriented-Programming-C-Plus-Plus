@@ -1,32 +1,47 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
+
 /*
 @brief prints the elements in the vector and their memory locations
 @ param v - vector of integers
 
 */
 
-void printMemVec(int* v, int size){
-
+void printMemVec(const vector<int>& v, int size){
+    printf("Vector - Each int is worth %lu bytes\n", sizeof(v[0]));
+    for(int i = 0; i<size; i++)
+        printf("Value :%i at Memory Location %p\n", v[i]);
 
 }
 
-void incVecBy10(int* v, int SIZE){
-for (int i = 0, i<=10, i++)
-
+void incVecBy10(vector<int> v, int size){
+for (int i = 0; i<size; i++)
+    v[i] += 10;
 }
 
 int main(){
 
-    int SIZE = 5;
-    vector<int> vec(5);
+    const int SIZE = 5;
+    vector <int> vec;
 
-    for (int i = 100; i<=104; i++){
+    for (int i = 0; i<SIZE; i++){
         vec[i] = i + 1;
     }
 
     printf("Before Increment------\n");
-    printMemVec(vec, SIZE);
+    printMemVec(vec,SIZE);
+    incVecBy10(vec,SIZE);
+    printf("After--------\n");
+    printMemVec(vec,SIZE);
+
+    vec.pop_back();
+    printf("After Pop--------\n");
+    printMemVec(vec,SIZE);
+
+    vec.push_back(101);
+    vec.push_back(102);
+    printf("After Push-------\n");
+    printMemVec(vec,SIZE);
+    return 0;
 }
