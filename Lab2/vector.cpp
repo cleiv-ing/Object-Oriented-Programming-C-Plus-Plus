@@ -8,25 +8,24 @@ using namespace std;
 
 */
 
-void printMemVec(const vector<int>& v, int size){
-    printf("Vector - Each int is worth %lu bytes\n", sizeof(v[0]));
-    for(int i = 0; i<size; i++)
-        printf("Value :%i at Memory Location %p\n", v[i]);
+void printMemVec(vector<int> &vec, int size){
+    for(int i = 0; i< vec.size(); i++)
+        printf("Value :%i at Memory Location %p\n", vec[i], &vec[i]);
 
 }
 
-void incVecBy10(vector<int> v, int size){
-for (int i = 0; i<size; i++)
-    v[i] += 10;
+void incVecBy10(vector<int> &vec, int SIZE){
+for (int i = 0; i<SIZE; i++)
+    vec[i] += 10;
 }
 
 int main(){
 
     const int SIZE = 5;
-    vector <int> vec;
+    vector <int> vec(SIZE);
 
     for (int i = 0; i<SIZE; i++){
-        vec[i] = i + 1;
+        vec[i] = i + 100;
     }
 
     printf("Before Increment------\n");
@@ -45,3 +44,4 @@ int main(){
     printMemVec(vec,SIZE);
     return 0;
 }
+    
