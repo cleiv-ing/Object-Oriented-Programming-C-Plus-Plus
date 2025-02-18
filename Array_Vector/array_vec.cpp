@@ -6,7 +6,7 @@ using namespace std;
 void printMem(int * arr, int size){ //void printMem(int arr[], int size)
     printf("Each int is worth %lu bytes\n", sizeof(arr[0]));
     for(int i = 0; i< size; i++){
-    printf("Value :%i at Memory Location: %p\n", arr[i], arr+i);
+    printf("Value:%i at Memory Location: %p\n", arr[i], arr+i);
 
     }
 
@@ -26,7 +26,12 @@ int main(){
 
     cout << "The value at index 5 is " << arr[element_replace] << "\n";
 
-    cout << "Element 1's memory address is " << %p << "\n";
-    cout << "Element 2's memory address is " << arr[1] << "\n";
+
+    printf("The address for %i is Memory Location: %p\n", arr[0], arr+0);
+    printf("The address for %i is Memory Location: %p\n", arr[1], arr+1);
+
+    printf("The subtraction of these two addresses is %p\n", arr[0]-arr[1],arr+0-arr+1);
+    
+    
     return 0;
 }
