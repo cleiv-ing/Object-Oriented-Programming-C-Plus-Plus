@@ -1,20 +1,27 @@
 #include <iostream>
 #include <string>
 #include "Pet.h"
+
 using namespace std;
 
-
-    Pet::Pet(){
-        this -> name = "";
-        this -> age = -1;
-        this -> owner = "";
-        this -> IsHouseTrained = false;
+    Pet::Pet()
+    {
+        name = "";
+        age = -1;
+        owner = "";
+        IsHouseTrained = false;
     }
 
-    Pet(string name; int age; string owner; bool IsHouseTrained;);
+    Pet::Pet(string name, int a, string owner, bool IsHouseTrained)
+    {
+        this->name = name;
+        age = a;
+        this->owner = owner;
+        IsHouseTrained = getIsHouseTrained;
+    }
 
     void Pet::getName(string name){
-        name = "Jeffrey";
+        this->name = name;
     }
 
     void Pet::getAge(int age){
@@ -25,12 +32,12 @@ using namespace std;
         owner = "Bob";
     }
 
-    void Pet::getIsHouseTrinaed(bool IsHouseTrained){
+    void Pet::getIsHouseTrained(bool IsHouseTrained){
         IsHouseTrained = true;
     }
 
     void Pet::updateName(string name){
-        name = "Moomers";
+        this->name = "Moomers";
     }
 
     void Pet::updateAge(int age){
