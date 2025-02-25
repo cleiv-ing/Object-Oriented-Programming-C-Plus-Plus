@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#define Pet.h
-#ifndef Pet.h
+#ifndef PET_H
+#define Pet
 
 using namespace std;
 
@@ -9,16 +9,19 @@ class Pet{
 
     public:
     //constructors
-    Pet();
-    Pet(string name, int age, string owner, bool isHouseTrained);
-    void getName(string);
-    void getAge(int);
-    string getOwner(string);
-    bool getIsHouseTrianed(bool);
-    void updateName(string);
-    void updateAge();
-    void updateOwner(string);
-    void setHouseTrained();
+    Pet(string name; int age; string owner; bool IsHouseTrained;);
+    
+    //mutator
+    void updateName(string name);
+    void updateAge(int new_age);
+    void updateOwner(string adopter);
+    void setHouseTrained(bool setHouseTrained);
+
+    //accessor        
+    void getName(string name);
+    void getAge(int age);
+    string getOwner(string owner);
+    bool getIsHouseTrianed(bool IsHouseTrained);
 
     private:
     string name;
