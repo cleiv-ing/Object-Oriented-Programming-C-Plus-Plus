@@ -12,12 +12,12 @@ using namespace std;
         IsHouseTrained = false;
     }
 
-    Pet::Pet(string name, int a, string owner, bool IsHouseTrained)
+    Pet::Pet(string name, int a, string owner, bool IsHT)
     {
         this->name = name;
         age = a;
         this->owner = owner;
-        IsHouseTrained = getIsHouseTrained;
+        IsHouseTrained = IsHT;
     }
 
     void Pet::getName(string name){
@@ -32,8 +32,8 @@ using namespace std;
         owner = "Bob";
     }
 
-    void Pet::getIsHouseTrained(bool IsHouseTrained){
-        IsHouseTrained = true;
+    void Pet::getIsHouseTrained(bool IsHT){
+        IsHT = true;
     }
 
     void Pet::updateName(string name){
