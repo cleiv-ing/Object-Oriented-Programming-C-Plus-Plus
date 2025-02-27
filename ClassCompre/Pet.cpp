@@ -25,29 +25,29 @@ using namespace std;
     }
 
     void Pet::getAge(int age){
-        age = 14;
+        this->age = age+1;
     }
 
     void Pet::getOwner(string owner){
-        owner = "Bob";
+        owner = owner;
     }
 
     void Pet::getIsHouseTrained(bool IsHT){
-        IsHT = true;
+        IsHT = IsHT;
     }
 
     void Pet::updateName(string name){
-        this->name = "Moomers";
+        this->name = name;
     }
 
     void Pet::updateAge(int age){
-        age = age+1;
+        this->age = age+1;
     }
 
     void Pet::updateOwner(string owner){
-        owner = "Meemers";
+        owner = owner;
     }
 
     void Pet::setHouseTrained(bool setHouseTrained){
-        setHouseTrained = true;
+        setHouseTrained = setHouseTrained;
     }
