@@ -16,7 +16,7 @@ class RPG{
     void setSkills();
     void printAction(string,RPG);
     void updateHealth(int);
-    void attack(RPG*);
+    //void attack(RPG*);
     void useSkill(RPG*);
     bool isAlive(bool) const;
     const string getName(string);

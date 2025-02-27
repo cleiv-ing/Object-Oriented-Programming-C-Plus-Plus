@@ -10,17 +10,23 @@ using namespace std;
 
 RPG::RPG()
 {
- 
+ name = "";
+ health = -1;
+ strength = -1;
+ defense = -1;
+ type = "";
+ skills[0] = "";
+ skills[1] = "";
 }
 
 RPG::RPG(string name, int health, int strength, int defense, string type){
     
     RPG mySkills;
-    mySkills.setSkills;
+    mySkills.setSkills();
      
-    name = "NPC";
+    this->name = "NPC";
     this->health = 100;
-    strength = 10;
+    this->strength = 10;
     defense = 10;
     type = "warrior";
     skills[0] = "slash";
@@ -46,26 +52,38 @@ void RPG::setSkills(){
 }
 
 const string RPG::getName(string){
+    this->name = name;
+    return name;
+    }
 
+const int RPG::getStrength(int){
+    this->strength = strength;
+    return strength;
+}
+
+const int RPG::getHealth(int){
+    this->health = health;
+    return health;
+}
+
+void RPG::updateHealth(int){
+        int health = health;
+}
+
+const bool isAlive(bool){
+    int health = 100;
+    if (health >0)
+    {
+    bool Alive = true;
+    }
+
+    else{
+    bool Alive = false;
+    }
+
+    return health;
 }
 
 void RPG::printAction(string skill, RPG opponent){
     printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName("Bobeth").c_str());
-}
-
-void updateHealth(int new_health){
-    int health = new_health;
-}
-
-const bool isAlive(bool){
-    this->health = 100;
-    if (health >0)
-    {
-        string Alive;
-        Alive = true;
-    }
-
-    else
-    string Alive;
-    Alive = false;
 }
