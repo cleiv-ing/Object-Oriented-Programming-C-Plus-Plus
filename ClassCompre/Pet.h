@@ -13,16 +13,16 @@ class Pet{
         Pet(string, int, string, bool);
         
         //mutator
-        void updateName(string);
-        void updateAge(int);
-        void updateOwner(string);
-        void setHouseTrained(bool);
+        string updateName();
+        int updateAge();
+        string updateOwner();
+        bool setHouseTrained();
 
         //accessor        
-        void getName(string);
-        void getAge(int);
-        void getOwner(string);
-        void getIsHouseTrained(bool);
+        string getName();
+        int getAge();
+        string getOwner();
+        bool getIsHouseTrained();
 
     private:
         string name;

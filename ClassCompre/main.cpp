@@ -9,11 +9,9 @@ int main(){
     Pet jeff = Pet("Jeff", 14,"Bob", true);
     Pet unknown = Pet();
 
-   // void Pet()
-   // {
-   //     cout << jeff << endl;
-    //}
-    printf("Name: %s \tAge: %i \tOwner: %s IsHouseTrained: %i\n", jeff.getName(),jeff.getAge,jeff.getOwner,jeff.getIsHouseTrained);
+    cout << jeff.getName();
+   
+    printf("Name: %s \tAge: %i \tOwner: %s IsHouseTrained: %i\n", jeff.getName(),jeff.getAge(),jeff.getOwner(),jeff.getIsHouseTrained());
     printf("Name: %s \tAge: %i \tOwner: %s IsHouseTrained: %i\n"), unknown;
 
     return 0;

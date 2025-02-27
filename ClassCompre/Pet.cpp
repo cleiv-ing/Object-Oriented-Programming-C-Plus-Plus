@@ -20,34 +20,37 @@ using namespace std;
         IsHouseTrained = IsHT;
     }
 
-    void Pet::getName(string name){
-        this->name = name;
+    string Pet::getName(){
+        return name;
     }
 
-    void Pet::getAge(int age){
-        this->age = age+1;
+    int Pet::getAge(){
+        return age+1;
     }
 
-    void Pet::getOwner(string owner){
-        owner = owner;
+    string Pet::getOwner(){
+        return owner;
     }
 
-    void Pet::getIsHouseTrained(bool IsHT){
-        IsHT = IsHT;
+    bool Pet::getIsHouseTrained(){
+        return getIsHouseTrained;
     }
 
-    void Pet::updateName(string name){
-        this->name = name;
+    string Pet::updateName(){
+        string newName = "Jeef";
+        return newName;
     }
 
-    void Pet::updateAge(int age){
-        this->age = age+1;
+    int Pet::updateAge(){
+        int newAge = age+1;
+        return newAge;
     }
 
-    void Pet::updateOwner(string owner){
-        owner = owner;
+    string Pet::updateOwner(){
+        string newOwner = "Beff"
+        return owner;
     }
 
-    void Pet::setHouseTrained(bool setHouseTrained){
-        setHouseTrained = setHouseTrained;
+    bool Pet::setHouseTrained(){
+        return setHouseTrained;
     }
