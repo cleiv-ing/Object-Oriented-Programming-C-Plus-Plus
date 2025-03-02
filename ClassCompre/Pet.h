@@ -16,7 +16,7 @@ class Pet{
         string updateName();
         int updateAge();
         string updateOwner();
-        void setHouseTrained();
+        bool setHouseTrained();
 
         //accessor        
         string getName();

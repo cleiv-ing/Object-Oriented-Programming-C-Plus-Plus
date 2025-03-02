@@ -52,6 +52,7 @@ using namespace std;
         return owner;
     }
 
-    void Pet::setHouseTrained(){
+    bool Pet::setHouseTrained(){
         bool IsHT = false;
+        return IsHT;
     }
