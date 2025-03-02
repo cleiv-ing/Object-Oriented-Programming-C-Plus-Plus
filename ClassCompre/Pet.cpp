@@ -6,9 +6,9 @@ using namespace std;
 
     Pet::Pet()
     {
-        name = "";
+        name = "null";
         age = -1;
-        owner = "";
+        owner = "null";
         IsHouseTrained = false;
     }
 
@@ -25,7 +25,7 @@ using namespace std;
     }
 
     int Pet::getAge(){
-        return age+1;
+        return age;
     }
 
     string Pet::getOwner(){
@@ -33,7 +33,8 @@ using namespace std;
     }
 
     bool Pet::getIsHouseTrained(){
-        return getIsHouseTrained;
+        bool IsHT = true;
+        return IsHT;
     }
 
     string Pet::updateName(){
@@ -47,10 +48,10 @@ using namespace std;
     }
 
     string Pet::updateOwner(){
-        string newOwner = "Beff"
+        string newOwner = "Beff";
         return owner;
     }
 
-    bool Pet::setHouseTrained(){
-        return setHouseTrained;
+    void Pet::setHouseTrained(){
+        bool IsHT = false;
     }
