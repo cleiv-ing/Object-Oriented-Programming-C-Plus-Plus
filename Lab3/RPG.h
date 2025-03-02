@@ -14,15 +14,16 @@ class RPG{
 
     //mutators
     void setSkills();
-    void printAction(string,RPG);
-    void updateHealth(int);
-    //void attack(RPG*);
-    void useSkill(RPG*);
-    bool isAlive(bool) const;
-    const string getName(string);
-    const int getHealth(int);
-    const int getStrength(int);
-    const int getDefense(int);
+    void printAction();
+    void updateHealth();
+    string getType();
+    //void attack();
+    //void useSkill();
+    //bool isAlive();
+    const string getName();
+    const int getHealth();
+    const int getStrength();
+    const int getDefense();
 
     private:
     string name;

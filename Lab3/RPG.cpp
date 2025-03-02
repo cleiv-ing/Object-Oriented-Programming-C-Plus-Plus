@@ -19,12 +19,12 @@ RPG::RPG()
  skills[1] = "";
 }
 
-RPG::RPG(string name, int health, int strength, int defense, string type){
+RPG::RPG(string, int, int, int, string){
     
     RPG mySkills;
     mySkills.setSkills();
      
-    this->name = "NPC";
+    name = "Lev";
     this->health = 100;
     this->strength = 10;
     defense = 10;
@@ -51,26 +51,36 @@ void RPG::setSkills(){
     
 }
 
-const string RPG::getName(string){
-    this->name = name;
+const string RPG::getName(){
+    name = name;
     return name;
     }
 
-const int RPG::getStrength(int){
+const int RPG::getStrength(){
     this->strength = strength;
     return strength;
 }
 
-const int RPG::getHealth(int){
+const int RPG::getHealth(){
     this->health = health;
     return health;
 }
 
-void RPG::updateHealth(int){
+const int RPG::getDefense(){
+    defense = defense;
+    return defense;
+}
+
+string RPG::getType(){
+    type = type;
+    return type;
+}
+
+void RPG::updateHealth(){
         int health = health;
 }
 
-const bool isAlive(bool){
+const bool isAlive(){
     int health = 100;
     if (health >0)
     {
@@ -84,6 +94,6 @@ const bool isAlive(bool){
     return health;
 }
 
-void RPG::printAction(string skill, RPG opponent){
-    printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName("Bobeth").c_str());
-}
+// void RPG::printAction(){
+//     printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName("Bobeth").c_str());
+// }
