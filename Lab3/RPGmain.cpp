@@ -7,7 +7,7 @@ using namespace std;
 int main(){
 
     RPG unknown = RPG();
-    RPG Lev = RPG("Lev", 100, 100,100,"warrior");
+    RPG Lev = RPG("NPC", 100, 10, 10,"warrior");
 
     //printf("Name: %s \tHealth: %i \tStrength: %i Defense: %i Type: %s\n"), unknown;
     //printf("Name: %s \tAge: %i \tOwner: %s IsHouseTrained: %i Type: %s\n"), Lev;
@@ -26,7 +26,7 @@ int main(){
     cout << "Defense Level: " << unknown.getDefense() << "\n";
     cout << "Warrior Type: " << unknown.getType() << "\n";
     
-    //cout << RPG::isAlive,Lev;
-    //cout << RPG::updateHealth, Lev;
+    cout << "Is Player " << Lev.getName() << " alive? 1 = alive. 0 = dead. " << Lev.isAlive() << "\n";
+    cout << "Updated Health: " << Lev.updateHealth() << "\n";
     return 0;
 }

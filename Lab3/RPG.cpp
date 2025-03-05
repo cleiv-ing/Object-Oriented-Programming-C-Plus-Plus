@@ -24,7 +24,7 @@ RPG::RPG(string, int, int, int, string){
     RPG mySkills;
     mySkills.setSkills();
      
-    name = "Lev";
+    name = "NPC";
     this->health = 100;
     this->strength = 10;
     defense = 10;
@@ -32,6 +32,52 @@ RPG::RPG(string, int, int, int, string){
     skills[0] = "slash";
     skills[1] = "parry";
  }
+
+
+const string RPG::getName(){
+    name = name;
+    return name;
+    }
+
+const int RPG::getStrength(){
+    this->strength = strength;
+    return strength;
+}
+
+const int RPG::getHealth(){
+    return health;
+}
+
+const int RPG::getDefense(){
+    defense = defense;
+    return defense;
+}
+
+string RPG::getType(){
+    type = type;
+    return type;
+}
+
+int RPG::updateHealth(){
+        int new_health = 0;
+        health = health - new_health;
+        return health;
+}
+
+bool RPG::isAlive(){
+    int health = health;
+    if (health >0)
+    {
+    bool Alive = true;
+    Alive = Alive;
+    }
+
+    else{
+    bool Alive = false;
+    Alive = Alive;
+    }
+    return health;
+}
 
 
 void RPG::setSkills(){
@@ -49,49 +95,6 @@ void RPG::setSkills(){
         skills [1] = "parry";
     }
     
-}
-
-const string RPG::getName(){
-    name = name;
-    return name;
-    }
-
-const int RPG::getStrength(){
-    this->strength = strength;
-    return strength;
-}
-
-const int RPG::getHealth(){
-    this->health = health;
-    return health;
-}
-
-const int RPG::getDefense(){
-    defense = defense;
-    return defense;
-}
-
-string RPG::getType(){
-    type = type;
-    return type;
-}
-
-void RPG::updateHealth(){
-        int health = health;
-}
-
-const bool isAlive(){
-    int health = 100;
-    if (health >0)
-    {
-    bool Alive = true;
-    }
-
-    else{
-    bool Alive = false;
-    }
-
-    return health;
 }
 
 // void RPG::printAction(){

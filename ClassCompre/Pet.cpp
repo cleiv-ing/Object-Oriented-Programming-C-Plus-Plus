@@ -38,8 +38,8 @@ using namespace std;
     }
 
     string Pet::updateName(){
-        string newName = "Jeef";
-        return newName;
+        this-> name = name; //this is what i changed from prof quon's review
+        return name;
     }
 
     int Pet::updateAge(){

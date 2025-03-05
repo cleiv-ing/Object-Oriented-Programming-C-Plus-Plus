@@ -15,11 +15,11 @@ class RPG{
     //mutators
     void setSkills();
     void printAction();
-    void updateHealth();
+    int updateHealth();
     string getType();
     //void attack();
     //void useSkill();
-    //bool isAlive();
+    bool isAlive();
     const string getName();
     const int getHealth();
     const int getStrength();
