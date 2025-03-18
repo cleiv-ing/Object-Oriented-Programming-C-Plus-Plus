@@ -13,12 +13,12 @@ class RPG{
     RPG(string, int, int, int, string);
 
     //mutators
-    void setSkills();
+    void setSkills(); //didn't add new parameter string
     void printAction();
-    int updateHealth();
+    void updateHealth(int); //new parameter is (int)
     string getType();
-    //void attack();
-    //void useSkill();
+    void attack(RPG*);
+    void useSkill(RPG*);
     bool isAlive();
     const string getName();
     const int getHealth();

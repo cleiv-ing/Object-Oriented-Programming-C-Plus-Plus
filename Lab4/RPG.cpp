@@ -58,10 +58,10 @@ string RPG::getType(){
     return type;
 }
 
-int RPG::updateHealth(){
+void RPG::updateHealth(int){
         int new_health = 0;
         health = health - new_health;
-        return health;
+        //return health; don't need this anymore?
 }
 
 bool RPG::isAlive(){
@@ -94,9 +94,25 @@ void RPG::setSkills(){
         skills [0] = "slash";
         skills [1] = "parry";
     }
-    
+
 }
 
+
+void RPG::attack(RPG * opponent){
+    int defense;
+    int health;
+    int strength;
+
+    int new_health = health - abs(defense+strength);
+
+    (*opponent).updateHealth(new_health); //not too sure if this is right, will check
+    
+
+}
+
+void RPG::useSkill(RPG* opponent){
+    
+}
 // void RPG::printAction(){
 //     printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName("Bobeth").c_str());
 // }
