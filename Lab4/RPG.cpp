@@ -106,11 +106,23 @@ void RPG::attack(RPG * opponent){
     int new_health = health - abs(defense+strength);
 
     (*opponent).updateHealth(new_health); //not too sure if this is right, will check
-    
 
 }
 
 void RPG::useSkill(RPG* opponent){
+    for(int i = 0; i<=2; i++)
+    {
+        cout << "Which skill would you like to use? \n";
+        cin >> i;
+        if(skill = 1;)
+        {
+            attack(*opponent);
+        }
+        else //this is where we use skill 0
+        {
+            
+        }
+    }
     
 }
 // void RPG::printAction(){
