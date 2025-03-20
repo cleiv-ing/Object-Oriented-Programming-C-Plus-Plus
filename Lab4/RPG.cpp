@@ -24,7 +24,7 @@ RPG::RPG(string, int, int, int, string){
     RPG mySkills;
     mySkills.setSkills();
      
-    name = "NPC";
+    name = "Lev";
     this->health = 100;
     this->strength = 10;
     defense = 10;
@@ -58,7 +58,7 @@ string RPG::getType(){
     return type;
 }
 
-void RPG::updateHealth(int){
+void RPG::updateHealth(){
         int new_health = 0;
         health = health - new_health;
         //return health; don't need this anymore?
@@ -98,29 +98,27 @@ void RPG::setSkills(){
 }
 
 
-void RPG::attack(RPG * opponent){
-    int defense;
-    int health;
-    int strength;
+    void RPG::attack(RPG& opponent){
 
-    int new_health = health - abs(defense+strength);
+        int new_health = health - abs(strength-defense);
+        cout << new_health;
+        int new_health = opponent&.updateHealth(); //not too sure if this is right, will check
 
-    (*opponent).updateHealth(new_health); //not too sure if this is right, will check
-
-}
+    }
 
 void RPG::useSkill(RPG* opponent){
     for(int i = 0; i<=2; i++)
     {
         cout << "Which skill would you like to use? \n";
         cin >> i;
-        if(skill = 1;)
+        int skill[SKILL_SIZE];
+        if(int i = 1)
         {
-            attack(*opponent);
+            attack(opponent);
         }
         else //this is where we use skill 0
         {
-            
+            attack(opponent);
         }
     }
     

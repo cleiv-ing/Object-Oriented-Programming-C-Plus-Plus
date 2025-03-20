@@ -27,6 +27,6 @@ int main(){
     cout << "Warrior Type: " << unknown.getType() << "\n";
     
     cout << "Is Player " << Lev.getName() << " alive? 1 = alive. 0 = dead. " << Lev.isAlive() << "\n";
-    cout << "Updated Health: " << Lev.updateHealth() << "\n";
+    cout << Lev.updateHealth(10);
     return 0;
 }
