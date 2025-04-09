@@ -26,7 +26,7 @@ int main(){
     cout << "Defense Level: " << unknown.getDefense() << "\n";
     cout << "Warrior Type: " << unknown.getType() << "\n";
     
-    cout << "Is Player " << Lev.getName() << " alive? 1 = alive. 0 = dead. " << Lev.isAlive() << "\n";
-    cout << Lev.updateHealth(10);
+   cout << "Is Player " << Lev.getName() << " alive? 1 = alive. 0 = dead. " << Lev.isAlive() << "\n";
+   //cout << Lev.updateHealth(10);
     return 0;
 }

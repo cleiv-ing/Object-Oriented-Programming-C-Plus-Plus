@@ -19,10 +19,9 @@ RPG::RPG()
  skills[1] = "";
 }
 
-RPG::RPG(string, int, int, int, string){
+RPG::RPG(string name, int health, int strength, int defense, string type){
     
-    RPG mySkills;
-    mySkills.setSkills();
+    setSkills();
      
     name = "Lev";
     this->health = 100;
@@ -35,12 +34,10 @@ RPG::RPG(string, int, int, int, string){
 
 
 const string RPG::getName(){
-    name = name;
     return name;
     }
 
 const int RPG::getStrength(){
-    this->strength = strength;
     return strength;
 }
 
@@ -49,20 +46,17 @@ const int RPG::getHealth(){
 }
 
 const int RPG::getDefense(){
-    defense = defense;
     return defense;
 }
 
 string RPG::getType(){
-    type = type;
     return type;
 }
 
-void RPG::updateHealth(){
-        int new_health = 0;
-        health = health - new_health;
-        //return health; don't need this anymore?
-}
+// void RPG::updateHealth(){
+//         int new_health = 0;
+//         health = health - new_health;
+// }
 
 bool RPG::isAlive(){
     int health = health;
@@ -98,31 +92,24 @@ void RPG::setSkills(){
 }
 
 
-    void RPG::attack(RPG& opponent){
+// void RPG::attack(RPG& opponent){
 
-        int new_health = health - abs(strength-defense);
-        cout << new_health;
-        int new_health = opponent&.updateHealth(); //not too sure if this is right, will check
+//     new_health = health - abs(strength-defense); //changed
+//     cout << new_health;
+//     new_health = RPG& opponent.updateHealth(); //not too sure if this is right, will check
 
-    }
+// }
 
-void RPG::useSkill(RPG* opponent){
-    for(int i = 0; i<=2; i++)
-    {
-        cout << "Which skill would you like to use? \n";
-        cin >> i;
-        int skill[SKILL_SIZE];
-        if(int i = 1)
-        {
-            attack(opponent);
-        }
-        else //this is where we use skill 0
-        {
-            attack(opponent);
-        }
-    }
+// void RPG::useSkill(RPG& opponent){
+//     for(int i = 0; i<=2; i++)
+//     {
+//         cout << "Which skill would you like to use? \n";
+//         cin >> i;
+//         int skill[SKILL_SIZE];
+       
+//     }
     
-}
+// }
 // void RPG::printAction(){
 //     printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName("Bobeth").c_str());
 // }

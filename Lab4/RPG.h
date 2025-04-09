@@ -10,15 +10,15 @@ class RPG{
     //constructors
     public:
     RPG();
-    RPG(string, int, int, int, string);
+    RPG(string name, int health, int strength, int defense, string type);
 
     //mutators
     void setSkills(); //didn't add new parameter string
     void printAction();
-    void updateHealth(int); //new parameter is (int)
+    //void updateHealth(int); //new parameter is (int)
     string getType();
-    void attack(RPG&);
-    void useSkill(RPG*);
+    void attack(RPG& opponent);
+    void useSkill(RPG& opponent);
     bool isAlive();
     const string getName();
     const int getHealth();
