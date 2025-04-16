@@ -46,5 +46,5 @@ void Pokemon::printStats(){
     for(int i = 0; i< type.size(); i++){
         cout << type[i] << "\t";
     }
-    std::cout << endl;
+    std::cout << "" << std::endl;
 }
